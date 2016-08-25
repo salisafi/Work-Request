@@ -1,0 +1,19 @@
+#cot-header .blue {background-color: #346488;}
+#cot-header form.form-inline[role=search] legend {padding: 0px; margin:0px;border-bottom:0px;font-size: 1em;}
+#cot-header .siteIcon {background-image: url(http://www1.toronto.ca/static_files/assets/images/citylogo-livingintoronto.gif);}
+#app-header{background: url(//www1.toronto.ca/static_files/assets/images/main_nav_bg.gif) repeat-x #566974;background-position: top left;padding-top: 0px; margin:0px;}
+#app-header h1 {font-size: 2em; font-weight: bold; padding: 10px 0px; margin:0px; color: white;}
+#app-header .glyphicon-lock {font-size: 2em; padding: 10px; margin:0px; color: yellow;} 
+#app-breadcrumb .breadcrumb {margin:15px 0px;}
+#cot-terms-title h2 {margin:5px 0px;}
+#maincontent .componentTitle {background-color: #ddd;}
+#maincontent {margin-bottom: 50px;}
+#maincontent ul {margin:10px;}
+#maincontent .form-group {margin:0px;}
+#maincontent input[type="radio"],#maincontent input[type="checkbox"] {width:20px; min-width:0; box-shadow:none; display: inline-block; height:15px;} 
+#maincontent .horizontal {display: inline-block; padding: 0px 10px;}
+#maincontent .form-group  {margin-bottom:15px;}
+#maincontent textarea {display:block; width:100%; height:70px;}
+#maincontent button {margin:5px;}
+#maincontent .staticlabel {font-weight: bold;margin:0px;}
+#maincontent .helptext {font-style: italic; margin:0px;}

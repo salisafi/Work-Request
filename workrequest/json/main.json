@@ -1,0 +1,70 @@
+[{
+  "id": "fh-form",
+  "title": "Web Revitalization Form JS API",
+  "sections": [
+    {
+      "id": "fh-datetime",
+      "title": "Date Time Picker Example",
+      "rows": [
+        {
+          "fields": [
+            {
+              "id": "defaultSelect",
+              "title": "Date & Time Picker",
+              "type": "datetimepicker",
+              "options": {}
+            },
+            {
+              "id": "dateSelect",
+              "title": "Date Picker",
+              "type": "datetimepicker",
+              "options": {
+                "format": "DD/MM/YYYY"
+              }
+            },
+            {
+              "id": "timeSelect",
+              "title": "Time Picker",
+              "type": "datetimepicker",
+              "options": {
+                "format": "LT"
+              }
+            }
+          ],
+          "type": "standard"
+        },
+        {
+          "fields": [
+            {
+              "id": "daySelect",
+              "title": "Day Picker",
+              "type": "datetimepicker",
+              "options": {
+                "format": "DD/MM/YYYY"
+              }
+            },
+            {
+              "id": "monthSelect",
+              "title": "Month Picker",
+              "type": "datetimepicker",
+              "options": {
+                "viewMode": "months",
+                "format": "MMM"
+              }
+            },
+            {
+              "id": "yearSelect",
+              "title": "Year Picker",
+              "type": "datetimepicker",
+              "options": {
+                "viewMode": "years",
+                "format": "YYYY"
+              }
+            }
+          ],
+          "type": "standard"
+        }
+      ]
+    }
+  ]
+}]

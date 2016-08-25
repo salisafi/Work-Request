@@ -1,0 +1,626 @@
+<section id="rtw">
+		<!-- web page header -->
+		<header role="banner">
+
+		</header>
+		<!-- web page main content -->
+		<main role="main" property="mainContentOfPage" class="container">
+			<br>
+			<p id="nameDiv"></p>
+			<p id="empDiv"></p>
+			<br>
+			<!-- web page main accordion tabs -->
+			<br>
+			<div class="container">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#SSTab">Spring/Summer Requests</a></li>
+					<li><a data-toggle="tab" href="#FWTab">Fall/Winter Requests</a></li>
+				</ul>
+				<div class="tab-content">
+<!-- Spring/Summer Tab -->	
+
+					<div id="SSTab" class="tab-pane fade in active border" onClick="SSswitch()">
+					<div class="panel-group" id="accordionSSReq" role="tablist" aria-multiselectable="true">
+						<h3>Spring/Summer Requests</h3>
+						<p id="SSdateDeadline" class="dateDeadline"></p>
+						<p id="SSdateDeadline2"></p><br>
+						<script type="text/javascript">
+						
+						</script>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="small-container">
+<!-- Spring/Summer Type A panel-->	
+						<a href="#" class="btn btn-default openall" onClick="openAll()"><font color="black">Open all</font></a> 
+						<a href="#" class="btn btn-default closeall" onClick="closeAll()"><font color="black">Close all</font></a>
+						<br>
+						<br>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneOne">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSSReq" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+											<i class="glyphicon glyphicon-minus"></i><b>Type A Requests</b> - Previous Shifts</a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="Request a previous shift you've done before"></i>
+											<button type="button" class= "btn btn-success pull-right" onclick="showModal('A', 'A', 'SS')">Add New</button>
+										</h4>
+									</div>
+									<!-- panel body -->
+									<div id="collapse11" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOneOne">
+										<div class="panel-body">
+											<div class= "row">
+												<div id="typeARequestsSS"></div>
+											</div>
+											<br>
+										</div>
+									</div><!-- end of panel body -->
+								</div>
+<!-- Spring/Summer Type B panel-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneTwo">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordionSSReq" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+											<i class="glyphicon glyphicon-plus"></i><b>Type B Requests</b> - Previous Location, Previous Classification</a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="New shift request at a previous location with a previous classification"></i>
+											<button type="button" class= "btn btn-success pull-right" onclick="showModal('B', 'D', 'SS')">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneTwo">
+										<div class="panel-body">
+											<div class= "row">
+												<div id="typeBRequestsSS"></div>
+											</div>
+											<br>
+										</div>
+									</div>
+								</div>
+<!-- Spring/Summer Type C panel-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneThree">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordionSSReq" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+											<i class="glyphicon glyphicon-plus"></i><b>Type C Requests</b> - Previous Location, New Classification</a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="New shift request at a previous location with a new classification"></i>
+											<button type="button" class= "btn btn-success pull-right"  onclick="showModal('C', 'D', 'SS')">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneThree">
+										<div class="panel-body">
+												<div class= "row">
+													<div id="typeCRequestsSS"></div>
+												</div>
+											<br>
+										</div>
+									</div>
+								</div>
+<!-- Spring/Summer Type D panel-->								
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneFour">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordionSSReq" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+											<i class="glyphicon glyphicon-plus"></i><b>Type D Requests</b> - New Location, New Classification</a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="New shift request at a new location with a new classification"></i>
+											<button type="button" class= "btn btn-success pull-right"  onclick="showModal('D', 'D', 'SS')">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneFour">
+										<div class="panel-body">
+											<div class= "row">
+												<div id="typeDRequestsSS"></div>
+											</div>
+											<br>
+										</div>
+									</div>
+								</div><!-- end of panel D -->
+<!-- Spring/Summer Relief panel-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSSReq" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+											<i class="glyphicon glyphicon-plus"></i><b>Relief Requests</b></a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="New relief request"></i>
+											<button type="button" class= "btn btn-success pull-right" onclick="showModal('R', 'R', 'SS');">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<div class= "row">
+												<div id="typeRRequestsSS"></div>
+											</div>
+											<br>
+										</div>
+									</div>
+								</div>
+								<div>
+									<br>
+									<button class="btn btn-primary" onClick="submit();"> Submit </button>
+								</div>
+						    </div><!-- end of accordion -->
+						</div>
+					</div><!-- end of tabs -->
+
+<!-- Fall/Winter Tab -->						
+					<div id="FWTab" class="tab-pane fade border" onClick="FWswitch()">
+					<div class="panel-group" id="accordionFWReq" role="tablist" aria-multiselectable="true">
+						<h3>Fall/Winter Requests</h3>
+						<p id="FWdateDeadline" class="dateDeadline"></p>
+						<p id="FWdateDeadline2"></p><br>
+						<script type="text/javascript">
+						
+						</script>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="small-container">
+<!-- Fall/Winter Type A panel-->	
+						<a href="#" class="btn btn-default openall" onClick="openAll()"><font color="black">Open all</font></a> 
+						<a href="#" class="btn btn-default closeall" onClick="closeAll()"><font color="black">Close all</font></a>
+						<br>
+						<br>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneOne">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionFWReq" href="#collapse21" aria-expanded="true" aria-controls="collapse21">
+											<i class="glyphicon glyphicon-minus"></i><b>Type A Requests</b> - Previous Shifts</a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="Request a previous shift you've done before"></i>
+											<button type="button" class= "btn btn-success pull-right" onclick="showModal('A', 'A', 'FW')">Add New</button>
+										</h4>
+									</div>
+									<!-- panel body -->
+									<div id="collapse21" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOneOne">
+										<div class="panel-body">
+											<div class= "row">
+												<div id="typeARequestsFW"></div>
+											</div>
+											<br>
+										</div>
+									</div><!-- end of panel body -->
+								</div>
+<!-- Fall/Winter Type B panel-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneTwo">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordionFWReq" href="#collapse22" aria-expanded="false" aria-controls="collapse22">
+											<i class="glyphicon glyphicon-plus"></i><b>Type B Requests</b> - Previous Location, Previous Classification</a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="New shift request at a previous location with a previous classification"></i>
+											<button type="button" class= "btn btn-success pull-right" onclick="showModal('B', 'D', 'FW')">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneTwo">
+										<div class="panel-body">
+											<div class= "row">
+												<div id="typeBRequestsFW"></div>
+											</div>
+											<br>
+										</div>
+									</div>
+								</div>
+<!-- Fall/Winter Type C panel-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneThree">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordionFWReq" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+											<i class="glyphicon glyphicon-plus"></i><b>Type C Requests</b> - Previous Location, New Classification</a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="New shift request at a previous location with a new classification"></i>
+											<button type="button" class= "btn btn-success pull-right"  onclick="showModal('C', 'D', 'FW')">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneThree">
+										<div class="panel-body">
+												<div class= "row">
+													<div id="typeCRequestsFW"></div>
+												</div>
+											<br>
+										</div>
+									</div>
+								</div>
+<!-- Fall/Winter Type D panel-->								
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneFour">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordionFWReq" href="#collapse24" aria-expanded="false" aria-controls="collapse24">
+											<i class="glyphicon glyphicon-plus"></i><b>Type D Requests</b> - New Location, New Classification</a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="New shift request at a new location with a new classification"></i>
+											<button type="button" class= "btn btn-success pull-right"  onclick="showModal('D', 'D', 'FW')">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneFour">
+										<div class="panel-body">
+											<div class= "row">
+												<div id="typeDRequestsFW"></div>
+											</div>
+											<br>
+										</div>
+									</div>
+								</div><!-- end of panel D -->
+<!-- Fall/Winter Relief panel-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionFWReq" href="#collapse25" aria-expanded="false" aria-controls="collapse25">
+											<i class="glyphicon glyphicon-plus"></i><b>Relief Requests</b></a>
+											<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="New relief request"></i>
+											<button type="button" class= "btn btn-success pull-right" onclick="showModal('R', 'R', 'FW');">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<div class= "row">
+												<div id="typeRRequestsFW"></div>
+											</div>
+											<br>
+										</div>
+									</div>
+								</div>
+								<div>
+									<br>
+									<button class="btn btn-primary" onClick="submit();"> Submit </button>
+								</div>
+						    </div><!-- end of accordion -->
+					</div>
+					</div><!-- end of fall/winter tab -->
+				</div><!-- end of tab content -->
+			</div>
+			
+<!-- Modals -->
+		<!-- type A modal -->				
+			<div class="modal fade" id="typeAModal" tabindex="-1" role="dialog" aria-labelledby="typeAModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- panel header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h1 class="modal-title" id="TypeALabel">New Type A Request</h1>
+						</div>
+						<!-- panel body -->
+						<div class="modal-body">
+							<br>
+							<h2 class="h3">Previous Work Experience</h2>
+							<br>
+							<!-- form -->
+							<!-- <form id="form" action="index.html" method="get"> -->
+							<form id="form" action="" method="get"> 
+								<div id="typeAline1" class= "well well-sm">
+									<div class="row">
+										<div class="col-xs-10 col-sm-10 col-md-10 userdata">
+											<p><b>Etobicoke York - Albion Aquatic Center - Life Guard </b>
+											<br>Tuesday - 9:30 AM to 11:00 AM - Spring & Summer </p>
+										</div>
+										<div  class="col-xs-2 col-sm-2 col-md-2">
+											<a class="btn btn-success" onClick="addWorkRequest('A','#typeARequests','#typeAline1');">Add Request</a>
+										</div>	
+									</div>
+								</div>
+								<div id="typeAline2" class= "well well-sm">
+									<div class="row">
+										<div class="col-xs-10 col-sm-10 col-md-10 userdata">
+											<p><b>Etobicoke York - Albion Aquatic Center - Life Guard </b>
+											<br>Friday - 5:00 PM to 8:00 PM - Spring & Summer </p>
+										</div>
+										<div  class="col-xs-2 col-sm-2 col-md-2">
+											<a class="btn btn-success" onClick="addWorkRequest('A','#typeARequests','#typeAline2');">Add Request</a>
+										</div>	
+									</div>
+								</div>
+								<div id="typeAline3" class= "well well-sm">
+									<div class="row">
+										<div class="col-xs-10 col-sm-10 col-md-10 userdata">
+											<p><b>Etobicoke York - Albion Aquatic Center - Instructor</b>
+											<br>Monday - 4:00 PM to 6:00 PM - Fall & Winter</p>
+										</div>
+										<div class="col-xs-2 col-sm-2 col-md-2">
+											<a class="btn btn-success" onClick="addWorkRequest('A','#typeARequests','#typeAline3');">Add Request</a>
+										</div>
+									</div>
+								</div>
+								<div id="typeAline4" class= "well well-sm">
+									<div class="row">
+										<div class="col-xs-10 col-sm-10 col-md-10 userdata">
+											<p><b>North York - Seneca Village Community Centre - Life Guard</b>
+											<br>Sat-Sun - 4:30 PM to 6:00 PM - Spring
+											<br><b><font color="red">***Late***</font></b></p>
+										</div>
+										<div  class="col-xs-2 col-sm-2 col-md-2">
+											<a class="btn btn-success" onClick="addWorkRequest('A','#typeARequests','#typeAline4');">Add Request</a>
+										</div>		
+									</div>
+								</div>
+								<div>
+								<br>
+								<h4 class="h4 text-center">If your previous work experience is not in our system, click below to create a new Type A request</h4>
+								<br>
+									<div id="manualAForm">
+										<button type="button" id="manualARequest" class="btn btn-success manualCenter" data-dismiss="modal" onClick="seasonAModal()">Add New Manual Request</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- panel footer -->
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div><!-- end of modal content -->
+				</div>
+			</div><!-- end of modal -->
+			
+			
+<!-- type D modal -->				
+			<div class="modal fade" id="typeDModal" tabindex="-1" role="dialog" aria-labelledby="typeDModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- panel header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h1 class="modal-title" id="TypeDLabel"></h1>
+						</div>
+						<!-- panel body -->
+						<div class="modal-body">
+						<div id="manualNotify"></div> <!-- if manual form clicked, notify here -->
+							<br>
+								<div class="well">
+								<form id="typeDForm">
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "district">District:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="district" name="district" class="fomWidth form-control" onchange="districtChange()">
+												<option value="blank" id="noDist"></option>
+												<option id="etobicokeYork">Etobicoke York</option>
+												<option id="northYork">North York</option>
+												<option id="scarborough">Scarborough</option>
+												<option id="torontoEastYork">Toronto East York</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "location">Location:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="location" name="location" class="fomWidth form-control">
+												<option value="blank"></option>
+												<option class="eYork">Albion Aquatic Centre</option>
+												<option class="eYork eHide2">Etobicoke Centre</option>
+												<option class="eYork eHide2">Location 1</option>
+												<option class="nYork">Seneca Village Community Centre</option>
+												<option class="nYork">North York Conservatory</option>
+												<option class="nYork">Location 2</option>
+												<option class="scar sHide2">Agincourt Recreation Centre</option>
+												<option class="scar">Scaborough Arena</option>
+												<option class="scar sHide2">Location 3</option>
+												<option class="tYork">Harrison Pool</option>
+												<option class="tYork">Toronto Clubhouse</option>
+												<option class="tYork tHide">Location 4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "job">Job Classification: </label>
+										</div>
+										<div class="col-xs-9">
+											<select id="job" name="job" class="fomWidth form-control">
+												<option></option>
+												<option class="jHide">Lifeguard</option>
+												<option class="jHide">Swim Instructor</option>
+												<option class="jHide2">Fitness Coordinator</option>
+												<option class="jHide2">Weight Room Attendant</option>
+												<option class="jHide jHide2">Facility Reception</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "days">Days:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="days" name="days" class="days fomWidth form-control">
+												<option>Monday</option>
+												<option>Tuesday</option>
+												<option>Wednesday</option>
+												<option>Thursday</option>
+												<option>Friday</option>
+												<option>Saturday</option>
+												<option>Sunday</option>
+												<option>Mon-Fri</option>
+												<option>Sat-Sun</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">															
+											<label for= "availStart">Available Start Time:</label>
+										</div>
+										<div class="col-xs-9">
+											<input id="availStart" name="availStart" class="timepick fomWidth form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "availEnd">Available End Time:</label>
+										</div>
+										<div class="col-xs-9">
+											<input id="availEnd" name="availEnd" class="timepick fomWidth form-control">
+										</div>
+									</div>														
+									<div class="row">
+										<div class="col-xs-3">		
+											<label for= "season">Season:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="season" name="season" placeholder="Options" class="fomWidth form-control">
+												<option value="blank"></option>
+												<option id="springOpt">Spring</option>
+												<option id="summerOpt">Summer</option>
+												<option id="fallOpt">Fall</option>
+												<option id="winterOpt">Winter</option>
+												<option id="springSummerOpt">Spring & Summer</option>
+												<option id="fallWinterOpt">Fall & Winter</option>
+											</select>
+										</div>
+									</div>
+									<br><br>	
+									<div class="row">
+										<div class="col-xs-5"></div>
+										<div class="col-xs-7">														
+											<a class="btn btn-success" onClick="addWorkRequestTypeD('D','#typeDRequests','#typeDline');">Add Request</a>
+										</div>
+									</div>
+								</form>
+								<div id="manualNewForm">
+									<br>
+									<br>
+									<br>
+									<h4 class="h4 text-center">If your previous work experience is not in our system, click below to create a new request</h4>
+									<br>
+									<div>
+										<button type="button" id="manualNewRequest" class="btn btn-success manualCenter" onClick="manualRequest()">Add New Manual Request</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- panel footer -->
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div><!-- end of modal content -->
+				</div>
+			</div><!-- end of modal -->
+			
+<!-- Relief modal -->				
+			<div class="modal fade" id="typeRModal" tabindex="-1" role="dialog" aria-labelledby="typeRModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- panel header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h1 class="modal-title" id="TypeRLabel"></h1>
+						</div>
+						<!-- panel body -->
+						<div class="modal-body">
+							<br>
+								<div class="well">
+								<form id="typeRForm">
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "districtR">District:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="districtR" name="districtR" class="fomWidth form-control" onchange="districtChangeR()">
+												<option value="blank" id="noDist"></option>
+												<option id="etobicokeYorkR">Etobicoke York</option>
+												<option id="northYorkR">North York</option>
+												<option id="scarboroughR">Scarborough</option>
+												<option id="torontoEastYorkR">Toronto East York</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "locationR">Location:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="locationR" name="locationR" class="fomWidth form-control">
+												<option value="blank"></option>
+												<option class="eYork">Albion Aquatic Centre</option>
+												<option class="eYork eHide2">Etobicoke Centre</option>
+												<option class="eYork eHide2">Location 1</option>
+												<option class="nYork">Seneca Village Community Centre</option>
+												<option class="nYork">North York Conservatory</option>
+												<option class="nYork">Location 2</option>
+												<option class="scar sHide2">Agincourt Recreation Centre</option>
+												<option class="scar">Scaborough Arena</option>
+												<option class="scar sHide2">Location 3</option>
+												<option class="tYork">Harrison Pool</option>
+												<option class="tYork">Toronto Clubhouse</option>
+												<option class="tYork tHide">Location 4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "jobR">Job Classification: </label>
+										</div>
+										<div class="col-xs-9">
+											<select id="jobR" name="jobR" class="fomWidth form-control">
+												<option></option>
+												<option class="jHide">Lifeguard</option>
+												<option class="jHide">Swim Instructor</option>
+												<option class="jHide2">Fitness Coordinator</option>
+												<option class="jHide2">Weight Room Attendant</option>
+												<option class="jHide jHide2">Facility Reception</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "daysR">Days:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="daysR" name="daysR" class="daysR fomWidth form-control" multiple="multiple">
+												<option>Monday</option>
+												<option>Tuesday</option>
+												<option>Wednesday</option>
+												<option>Thursday</option>
+												<option>Friday</option>
+												<option>Saturday</option>
+												<option>Sunday</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">															
+											<label for= "availStartR">Available Start Time:</label>
+										</div>
+										<div class="col-xs-9">
+											<input id="availStartR" name="availStartR" class="timepick fomWidth form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "availEndR">Available End Time:</label>
+										</div>
+										<div class="col-xs-9">
+											<input id="availEndR" name="availEndR" class="timepick fomWidth form-control">
+										</div>
+									</div>														
+									<div class="row">
+										<div class="col-xs-3">		
+											<label for= "startDate">Available Start Date:</label>
+										</div>
+										<div class="col-xs-9">
+											<input id="startDate" name="startDate" class="datepick fomWidth form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">		
+											<label for= "endDate">Available End Date:</label>
+										</div>
+										<div class="col-xs-9">
+											<input id="endDate" name="endDate" class="datepick fomWidth form-control">
+										</div>
+									</div>
+									<br><br>	
+									<div class="row">
+										<div class="col-xs-5"></div>
+										<div class="col-xs-7">														
+											<a class="btn btn-success" onClick="addWorkRequestTypeR('R','#typeRRequests','#typeRline');">Add Request</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- panel footer -->
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div><!-- end of modal content -->
+				</div>
+			</div><!-- end of modal -->
+		</main> 
+</section>

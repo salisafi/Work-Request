@@ -1,0 +1,75 @@
+#maincontent #rtw button {margin: -5px;}
+#maincontent #rtw button.multiselect {margin: 0px;}
+#maincontent ul.dropdown-menu {
+    width: 40%;
+    padding: 0;
+    margin-top: 33px;
+    max-height: 200px;
+	overflow-y: hidden;
+}
+#maincontent #rtw .manualCenter {display: block;
+    margin-right: auto;
+    margin-left: auto;}
+#maincontent #rtw a.btn {color: white; text-decoration: none;}
+#maincontent #rtw a {font-weight:normal;}
+.glyphicon-info-sign {font-size: 18px;}
+
+
+.dateDeadline{
+color: orange;
+font-weight: bold;
+}
+.panel-group{
+padding-left:1em;
+padding-right:1em;
+}
+.list-entry{
+padding-left:1em;
+}
+.loginContainer{
+	padding: 250px auto; 
+	background: #cee1fc;
+}
+.small-container{
+	width: 90%;
+	padding: 5px 30px;
+}
+.noBorder{
+	border: none;
+}
+.btnBig{
+	width: 70%
+}
+.border{
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 10px;
+}
+.nav-tabs:active{
+	background: #ccc;
+}
+.tab-content{
+	border-left: 4px;
+ 
+}
+.panel-title{
+	padding: 10px;
+}
+.pull-right{
+ float: right;
+	margin-top: -10px;
+}
+
+.alignRight{
+	text-align: right;
+	margin-top: -20px;
+}
+.fomWidth{
+   width: 80%
+}
+.btnCenter{
+	margin: 0 43px;
+}
+/* #collapse11{
+	height:51px;
+} */
